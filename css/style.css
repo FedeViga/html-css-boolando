@@ -28,6 +28,7 @@ header {
     position: fixed;
     width: 100%;
     padding: 20px 0px;
+    z-index: 1;
 }
 
 header .container .link-bar {
@@ -75,16 +76,33 @@ main .container {
 /* struttra cards */
 main .container .card {
     width: calc((100% / 3) - 40px);
-    /* test */
-    border: 1px solid red;
     flex-grow: 1;
     flex-direction: column;
 }
 
-main .container .card img {
+main .container .card .image {
     width: 100%;
+    position: relative;
 }
 
+main .container .card .image img {
+width: 100%;
+}
+
+main .container .card .image .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: .5s ease;
+}
+
+main .container .card .image .overlay:hover {
+    opacity: 1;
+}
 main .container .card .description {
     position: relative;
 }
@@ -117,6 +135,20 @@ main .container .card .description .sustainable {
     top: -44px;
     left: 50px;
 }
+
+main .container .card .description .like {
+    background-color: white;
+    position: absolute;
+    padding: 10px 10px;
+    top: -650px;
+    right: 0px;
+}
+
+main .container .card .description .like:hover {
+    color: red;
+}
+
+
 /* fine struttra cards */
 
 
