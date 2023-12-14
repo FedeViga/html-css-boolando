@@ -4,3 +4,56 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+/* container */
+.container {
+    width: 1438px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+/* fine container */
+
+/* header */
+header {
+    background-color: #FF6900;
+    color: white;
+    font-weight: 500;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+header .container .link-bar {
+    width: 25%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+header .container .link-bar a{
+    text-decoration: none;
+    color: white;
+}
+header .container .profile {
+    width: 25%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+header .container .logo {
+    width: 50%;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+header .container .logo img {
+    width: 140px;
+}
+/* fine header */
