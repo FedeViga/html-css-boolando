@@ -136,6 +136,16 @@ main .container .card .description .sustainable {
     left: 50px;
 }
 
+main .container .card .description .sustainable-only {
+    background-color: green;
+    color: white;
+    padding: 5px 8px;
+    font-size: 0.8em;
+    position: absolute;
+    top: -44px;
+    left: 0px;
+}
+
 main .container .card .description .like {
     background-color: white;
     position: absolute;
