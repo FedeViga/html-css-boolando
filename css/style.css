@@ -67,14 +67,57 @@ main {
 main .container {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 50px 0px;
-}
-
-main .container .card{
-    /* test */
-
-    border: 1px solid red;
-    width: 465px;
-    height: 600px;
+    gap: 50px 20px;
 }
 /* fine struttura main */
+
+
+/* struttra cards */
+main .container .card {
+    width: calc((100% / 3) - 40px);
+    /* test */
+    border: 1px solid red;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+main .container .card img {
+    width: 100%;
+}
+
+main .container .card .description {
+    position: relative;
+}
+
+main .container .card .description .low-price {
+    color: red;
+    font-weight: 600;
+}
+
+main .container .card .description .full-price {
+    text-decoration: line-through;
+}
+
+main .container .card .description .discount {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 5px 8px;
+    font-size: 0.8em;
+    position: absolute;
+    top: -44px;
+}
+
+main .container .card .description .sustainable {
+    background-color: green;
+    color: white;
+    padding: 5px 8px;
+    font-size: 0.8em;
+    position: absolute;
+    top: -44px;
+    left: 50px;
+}
+/* fine struttra cards */
+
+
+
