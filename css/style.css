@@ -90,14 +90,14 @@ width: 100%;
 }
 
 main .container .card .image .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        object-fit: contain;
-        opacity: 0;
-        transition: .5s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: .5s ease;
 }
 
 main .container .card .image .overlay:hover {
@@ -157,9 +157,46 @@ main .container .card .description .like {
 main .container .card .description .like:hover {
     color: red;
 }
-
-
 /* fine struttra cards */
 
+/* footer */
+footer {
+    background-color: #1A1A1A;
+    color: white;
+}
 
+footer .container {
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+
+footer h5 {
+    font-size: 1em;
+}
+
+footer .container .copyright {
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+footer .container .copyright .info {
+    gap: 10px;
+    font-size: 0.7em;
+}
+
+footer .container .social-bar{
+    flex-direction: column;
+    gap: 7px;
+}
+
+footer .container .social-bar .find-us {
+    font-size: 0.9em;
+}
+footer .container .social-bar .social {
+    gap: 8px;
+}
+
+
+/* fine footer */
 
